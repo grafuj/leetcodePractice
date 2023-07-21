@@ -16,8 +16,9 @@ var mergeAlternately = function(word1, word2) {
       return merged;
   }
   if ( word2.length > word1.length){
-      for (char in word1) {
-          merged.push(char);
+       for (let i = 0; i < word1.length; i++) {
+          merged.push(word1[i]);
+          merged.push(word2[i]);
       }
       merged.push(word2.slice(word1.length - 1));
       return merged;
