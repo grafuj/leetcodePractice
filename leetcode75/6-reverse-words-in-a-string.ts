@@ -4,11 +4,13 @@ function reverseWords(s: string): string {
   let trimmed: string = "";
   // remove spaces
   trimmed = s.trim();
+  trimmed.split(" ");
+  console.log(trimmed, "trimmed")
 
-  let reversed: Array<string> = trimmed.split(" ");
+  let reversed: Array<string> = trimmed;
   // flip order
   for (let elem: string of reversed) {
-    
+
   }
 
   return reversed;
