@@ -4,20 +4,37 @@ function reverseWords(s: string): string {
   let trimmed: string = "";
   // remove spaces
   trimmed = s.trim();
-  trimmed.split(" ");
-  console.log(trimmed, "trimmed")
+  let split = trimmed.split(" ");
+  console.log("split: ", split);
 
-  let reversed: Array<string> = trimmed;
+  let reversed = "";
+  // let reversed: Array<string> = trimmed;
   // flip order
-  for (let elem: string of reversed) {
+  for (let i = split.length - 1; i > -1; i--) {
+    console.log("split[i]: ", split[i]);
+    console.log("its a space!", split[i], "length", split[i].length);
+    // if (split[i].length === 0) {
+    //   console.log("true")
+    // }
+    if (split[i].length !== 0) {
+      // add word
+      reversed += split[i];
 
+      // add spaces between words
+      if (i > 0) {
+        // don't add the space at the end
+        reversed += " ";
+      }
+    }
+
+    // console.log(reversed);
   }
 
   return reversed;
 }
 
 const bigString: string = "  hello world ";
-const bigString2: string = "  Where do I go from here? ";
+const bigString2: string = "  Where do    I go   from here? ";
 
-console.log(reverseWords(bigString));
+// console.log(reverseWords(bigString));
 console.log(reverseWords(bigString2));
