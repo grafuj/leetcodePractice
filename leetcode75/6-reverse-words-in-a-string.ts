@@ -33,8 +33,8 @@ function reverseWords(s: string): string {
   return reversed;
 }
 
-const bigString: string = "  hello world ";
-const bigString2: string = "  Where do    I go   from here? ";
+// const bigString: string = "  hello world ";
+// const bigString2: string = "  Where do    I go   from here? ";
 
 // console.log(reverseWords(bigString));
-console.log(reverseWords(bigString2));
+// console.log(reverseWords(bigString2));
