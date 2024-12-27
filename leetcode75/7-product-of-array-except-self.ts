@@ -15,6 +15,6 @@ function productExceptSelf(nums: number[]): number[] {
   return myArr;
 }
 
-let ex1: Array<number> = [1, 2, 3, 4];
+let exArray: Array<number> = [1, 2, 3, 4];
 
-console.log("prod(ex1): ", productExceptSelf(ex1));
+console.log("prod(ex1): ", productExceptSelf(exArray));
