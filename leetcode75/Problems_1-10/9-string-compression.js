@@ -3,25 +3,22 @@ function compress(chars) {
     if (chars.length === 1) {
         return chars;
     }
+    // make a big object with kays as letters and values as count per letter
     for (var i = 0; i < chars.length; i++) {
         var char = chars[i];
-        // console.log(myObj[char]);
         if (myObj[char] === undefined) {
             myObj[char] = 1;
         }
         else {
             myObj[char] = myObj[char] + 1;
         }
-        // console.log(myObj[char]);
     }
-    console.log("char: ", myObj, "length: ", myObj.length);
-    var counter = 0;
+    console.log("char: ", myObj);
+    // interate through the object putting keys and values into an array
     var returnArray = [];
     for (var letter in myObj) {
         returnArray.push(letter);
         returnArray.push(myObj[letter].toString());
-        counter = counter + 2;
-        console.log("letter: ", letter, counter);
     }
     console.log("return array: ", returnArray);
     return returnArray;

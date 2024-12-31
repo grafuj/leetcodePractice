@@ -4,7 +4,7 @@ function compress(chars: string[]): Array<string> {
   if (chars.length === 1) {
     return chars;
   }
-
+  // make a big object with kays as letters and values as count per letter
   for (let i = 0; i < chars.length; i++) {
     let char: string = chars[i];
     if (myObj[char] === undefined) {
@@ -14,6 +14,8 @@ function compress(chars: string[]): Array<string> {
     }
   }
   console.log("char: ", myObj);
+
+  // interate through the object putting keys and values into an array
   let returnArray: Array<string> = [];
   for (let letter in myObj) {
     returnArray.push(letter);
