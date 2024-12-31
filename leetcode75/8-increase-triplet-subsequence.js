@@ -12,16 +12,28 @@ function increasingTriplet(nums) {
         // break exits the for loop, continue ends the current execution/iteration
         console.log("comparison: ", "lowerArray: ", lowerElemsArray, "index: ", numsIndex, "elem: ", nums[numsIndex], "upperArray: ", upperElemsArray);
         // get lower elements array, iterate through
-        console.log("low check: ", lowerElemsArray.length > 0);
+        // console.log("low check: ", lowerElemsArray.length > 0);
         if (lowerElemsArray.length > 0 && upperElemsArray.length > 0) {
             for (var lowerElemsIndex = 0; lowerElemsIndex < lowerElementsCount; lowerElemsIndex++) {
-                console.log("lower elem comparison: ", lowerElemsArray[lowerElemsIndex], " < ", nums[numsIndex], lowerElemsArray[lowerElemsIndex] < nums[numsIndex]);
+                // console.log(
+                //   "lower elem comparison: ",
+                //   lowerElemsArray[lowerElemsIndex],
+                //   " < ",
+                //   nums[numsIndex],
+                //   lowerElemsArray[lowerElemsIndex] < nums[numsIndex]
+                // );
                 if (lowerElemsArray[lowerElemsIndex] < nums[numsIndex]) {
                     for (var upperElemsIndex = 0; upperElemsIndex < upperElementsCount; upperElemsIndex++) {
                         if (greater) {
                             break;
                         }
-                        console.log("upper elem comparison: ", upperElemsArray[upperElemsIndex], " > ", nums[numsIndex], upperElemsArray[upperElemsIndex] > nums[numsIndex]);
+                        // console.log(
+                        //   "upper elem comparison: ",
+                        //   upperElemsArray[upperElemsIndex],
+                        //   " > ",
+                        //   nums[numsIndex],
+                        //   upperElemsArray[upperElemsIndex] > nums[numsIndex]
+                        // );
                         if (upperElemsArray[upperElemsIndex] > nums[numsIndex]) {
                             greater = true;
                             smaller = true;
@@ -62,9 +74,9 @@ function increasingTriplet(nums) {
         return false;
     }
 }
-// let ex1: Array<number> = [1, 2, 3, 4, 5];
+var ex1 = [1, 2, 3, 4, 5];
 var ex2 = [5, 4, 3, 2, 1];
-// let ex3: Array<number> = [2, 1, 5, 0, 4, 6];
-// console.log(increasingTriplet(ex1));
+var ex3 = [2, 1, 5, 0, 4, 6];
+console.log(increasingTriplet(ex1));
 console.log(increasingTriplet(ex2));
-// console.log(increasingTriplet(ex3));
+console.log(increasingTriplet(ex3));
