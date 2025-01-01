@@ -6,7 +6,8 @@ function isSubsequence(s: string, t: string): boolean {
     if (splitS.indexOf(t[i]) !== -1) {
       // not included, splice it baby
       console.log("before reducedT: ", reducedT, "splitT: ", splitT);
-      reducedT = splitT.splice(i, 1);
+      // this line doesn't take the char as it is removed and push it onto reducedT
+      reducedT.push(splitT.splice(i, 1));
       console.log("after reducedT: ", reducedT, "splitT: ", splitT);
     }
   }
