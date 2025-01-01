@@ -3,6 +3,7 @@
  Input: nums = [0,1,0,3,12]
  Output: [1,3,12,0,0]
  */
+// export {};
 function moveZeroes(nums: number[]): void {
   let zeroCount: number = 0;
   for (let i = 0; i < nums.length; i++) {
@@ -22,8 +23,8 @@ function moveZeroes(nums: number[]): void {
   }
 }
 
-let ex1: Array<number> = [0, 1, 0, 3, 12];
-let ex2: Array<number> = [0, 0, 1];
+const ex1: Array<number> = [0, 1, 0, 3, 12];
+const ex2: Array<number> = [0, 0, 1];
 
 console.log(moveZeroes(ex1));
 console.log(moveZeroes(ex2));

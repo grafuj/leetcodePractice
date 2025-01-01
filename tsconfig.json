@@ -3,6 +3,7 @@
     "module": "ESNext",
     "target": "ES6",
     "isolatedModules": true,
-    "strict": true
+    "strict": true,
+    "moduleDetection": "force"
   }
 }
