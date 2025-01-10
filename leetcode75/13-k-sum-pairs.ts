@@ -56,12 +56,12 @@ function maxOperations(nums: number[], k: number): number {
   }
   return pairsCounter;
 }
-const ex1: Array<number> = [3, 1, 2, 4, 3];
-const ex2: Array<number> = [3, 1, 3, 4, 3];
+// const ex1: Array<number> = [3, 1, 2, 4, 3];
+// const ex2: Array<number> = [3, 1, 3, 4, 3];
 const ex3: Array<number> = [
   4, 4, 1, 3, 1, 3, 2, 2, 5, 5, 1, 5, 2, 1, 2, 3, 5, 4,
 ];
-const int6: number = 6;
+// const int6: number = 6;
 const int2: number = 2;
 // console.log(maxOperations(ex1, int6));
 // console.log(maxOperations(ex2, int6));
