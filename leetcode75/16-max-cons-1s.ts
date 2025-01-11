@@ -19,9 +19,14 @@ function longestOnes(nums: number[], k: number): number {
     return [max, position];
   }
 
+  
   console.log(countOnes(nums));
   let maxWithFlip: number = 0;
   let flippedCount: number = 0;
+  let numsLength: number = nums.length;
+  if(nums.indexOf(0) === -1) {
+    return numsLength;
+  }
   for(let i = 0; i < 2*k; i ++){
   
   }
