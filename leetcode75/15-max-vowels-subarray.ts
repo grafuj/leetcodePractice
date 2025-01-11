@@ -20,16 +20,16 @@ function maxVowels(s: string, k: number): number {
   let stringLength: number = s.length;
   let arrayOptions: number = stringLength - k;
 
-  for (let i = 0; i < arrayOptions; i++) {
+  for (let i = 0; i <= arrayOptions; i++) {
     let subString: string = s.slice(i, i + k);
-    console.log("subString:", subString, "maxVowels:", maxVowels);
+    // console.log("subString:", subString, "maxVowels:", maxVowels);
     let currentVowelCount: number = countVowels(subString);
-    if(currentVowelCount > maxVowels){
+    if (currentVowelCount > maxVowels) {
       maxVowels = currentVowelCount;
     }
-
   }
   return maxVowels;
 }
 
-console.log(maxVowels("abciiidef", 3))
+// console.log(maxVowels("abciiidef", 3));
+console.log(maxVowels("weallloveyou", 7));
