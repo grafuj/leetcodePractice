@@ -1,9 +1,9 @@
 // Given a string s, reverse only all the vowels in the string and return it.
 // The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower and upper cases, more than once.
 function reverseVowels(s) {
-    var vowelArray = [];
-    var result = "";
-    for (var i = 0; i < s.length; i++) {
+    const vowelArray = [];
+    let result = "";
+    for (let i = 0; i < s.length; i++) {
         if (s[i] === "a" ||
             s[i] === "e" ||
             s[i] === "i" ||
@@ -19,8 +19,8 @@ function reverseVowels(s) {
     }
     console.log("vowelArray: ", vowelArray);
     // we have our vowel array, we need to put them back in
-    var vowelCounter = vowelArray.length - 1;
-    for (var i = 0; i < s.length; i++) {
+    let vowelCounter = vowelArray.length - 1;
+    for (let i = 0; i < s.length; i++) {
         if (s[i] === "a" ||
             s[i] === "e" ||
             s[i] === "i" ||
@@ -44,5 +44,6 @@ function reverseVowels(s) {
 }
 // Input: s = "IceCreAm"
 // Output: "AceCreIm"
-var string1 = "IceCreAm";
+const string1 = "IceCreAm";
 console.log(reverseVowels(string1));
+export {};

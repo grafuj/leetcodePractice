@@ -1,10 +1,12 @@
 function maxOperations(nums, k) {
-    var sortedNums = nums.sort();
-    var firstIndex = 0;
-    var secondIndex = nums.length - 1;
-    var numsLength = nums.length;
-    var pairsCounter = 0;
-    for (var i = 0; i < numsLength; i++) {
+    let sortedNums = nums.sort((a, b) => {
+        return a - b;
+    });
+    let firstIndex = 0;
+    let secondIndex = nums.length - 1;
+    let numsLength = nums.length;
+    let pairsCounter = 0;
+    for (let i = 0; i < numsLength; i++) {
         console.log("sortedNums:", sortedNums, "firstIndex:", firstIndex, "nums[firstIndex]:", sortedNums[firstIndex], "secondIndex:", secondIndex, "nums[secondIndex]:", sortedNums[secondIndex], sortedNums[firstIndex], "+", sortedNums[secondIndex], "=", sortedNums[firstIndex] + sortedNums[secondIndex], "===", k);
         if (firstIndex === secondIndex ||
             sortedNums.length === 1 ||
@@ -35,13 +37,14 @@ function maxOperations(nums, k) {
     }
     return pairsCounter;
 }
-var ex1 = [3, 1, 2, 4, 3];
-var ex2 = [3, 1, 3, 4, 3];
-var ex3 = [
+// const ex1: Array<number> = [3, 1, 2, 4, 3];
+// const ex2: Array<number> = [3, 1, 3, 4, 3];
+const ex3 = [
     4, 4, 1, 3, 1, 3, 2, 2, 5, 5, 1, 5, 2, 1, 2, 3, 5, 4,
 ];
-var int6 = 6;
-var int2 = 2;
+// const int6: number = 6;
+const int2 = 2;
 // console.log(maxOperations(ex1, int6));
 // console.log(maxOperations(ex2, int6));
 console.log(maxOperations(ex3, int2));
+export {};

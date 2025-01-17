@@ -1,8 +1,8 @@
 function maxVowels(s, k) {
     function countVowels(string) {
-        var count = 0;
-        var stringLength = string.length;
-        for (var i = 0; i < stringLength; i++) {
+        let count = 0;
+        let stringLength = string.length;
+        for (let i = 0; i < stringLength; i++) {
             if (string[i] === "a" ||
                 string[i] === "e" ||
                 string[i] === "i" ||
@@ -13,13 +13,13 @@ function maxVowels(s, k) {
         }
         return count;
     }
-    var maxVowels = 0;
-    var stringLength = s.length;
-    var arrayOptions = stringLength - k;
-    for (var i = 0; i <= arrayOptions; i++) {
-        var subString = s.slice(i, i + k);
-        console.log("subString:", subString, "maxVowels:", maxVowels);
-        var currentVowelCount = countVowels(subString);
+    let maxVowels = 0;
+    let stringLength = s.length;
+    let arrayOptions = stringLength - k;
+    for (let i = 0; i <= arrayOptions; i++) {
+        let subString = s.slice(i, i + k);
+        // console.log("subString:", subString, "maxVowels:", maxVowels);
+        let currentVowelCount = countVowels(subString);
         if (currentVowelCount > maxVowels) {
             maxVowels = currentVowelCount;
         }
@@ -28,3 +28,4 @@ function maxVowels(s, k) {
 }
 // console.log(maxVowels("abciiidef", 3));
 console.log(maxVowels("weallloveyou", 7));
+export {};

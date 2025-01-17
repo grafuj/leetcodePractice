@@ -1,10 +1,10 @@
 function longestOnes(nums, k) {
     function countOnes(numbers) {
-        var numbersLength = numbers.length;
-        var max = 0;
-        var position = 0;
-        var count = 0;
-        for (var i = 0; i < numbersLength; i++) {
+        let numbersLength = numbers.length;
+        let max = 0;
+        let position = 0;
+        let count = 0;
+        for (let i = 0; i < numbersLength; i++) {
             if (numbers[i] === 1) {
                 count++;
             }
@@ -20,10 +20,22 @@ function longestOnes(nums, k) {
         return [max, position];
     }
     console.log(countOnes(nums));
-    var maxWithFlip = 0;
-    var flippedCount = 0;
-    for (var i = 0; i < 2 * k; i++) {
+    let maxWithFlip = 0;
+    let flippedCount = 0;
+    let numsLength = nums.length;
+    // edge case no 0s
+    if (nums.indexOf(0) === -1) {
+        return numsLength;
+    }
+    // get current max 1 count:
+    let tuple = countOnes(nums);
+    // use position to check before and after 
+    console.log(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11);
+    console.log(nums);
+    console.log(tuple);
+    for (let i = 0; i < 2 * k; i++) {
     }
     return maxWithFlip;
 }
 console.log(longestOnes([1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2));
+export {};
