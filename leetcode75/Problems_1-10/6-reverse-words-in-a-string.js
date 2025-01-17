@@ -1,4 +1,6 @@
+"use strict";
 //https://leetcode.com/problems/reverse-words-in-a-string/?envType=study-plan-v2&envId=leetcode-75
+Object.defineProperty(exports, "__esModule", { value: true });
 function reverseWords(s) {
     let trimmed = "";
     // remove spaces
@@ -27,7 +29,6 @@ function reverseWords(s) {
     }
     return reversed;
 }
-export {};
 // const bigString: string = "  hello world ";
 // const bigString2: string = "  Where do    I go   from here? ";
 // console.log(reverseWords(bigString));

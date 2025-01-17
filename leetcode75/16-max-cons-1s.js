@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function longestOnes(nums, k) {
     function countOnes(numbers) {
         let numbersLength = numbers.length;
@@ -38,4 +40,3 @@ function longestOnes(nums, k) {
     return maxWithFlip;
 }
 console.log(longestOnes([1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2));
-export {};

@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function findMaxAverage(nums, k) {
     function avg(numberArray) {
         let avg = 0;
@@ -29,4 +31,3 @@ function findMaxAverage(nums, k) {
 const ex1 = [5];
 // console.log(findMaxAverage(ex1, 4));
 console.log(findMaxAverage(ex1, 5));
-export {};

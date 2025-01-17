@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  Do not return anything, modify nums in-place instead.
  Input: nums = [0,1,0,3,12]
@@ -25,4 +27,3 @@ const ex1 = [0, 1, 0, 3, 12];
 const ex2 = [0, 0, 1];
 console.log(moveZeroes(ex1));
 console.log(moveZeroes(ex2));
-export {};

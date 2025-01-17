@@ -1,6 +1,8 @@
+"use strict";
 // is my code is more complete than what they expect:
 // input: flowerbed = [0,0,1,0,0]
 // n = 1
+Object.defineProperty(exports, "__esModule", { value: true });
 // flowerbed:  [ 1, 0, 1, 0, 0 ] count:  1
 // flowerbed:  [ 1, 0, 1, 0, 0 ] count:  1
 // flowerbed:  [ 1, 0, 1, 0, 0 ] count:  1
@@ -31,4 +33,3 @@ function canPlaceFlowers(flowerbed, n) {
 // console.log(canPlaceFlowers(bed1, 2));
 const bed2 = [0, 0, 1, 0, 1];
 console.log(canPlaceFlowers(bed2, 1));
-export {};

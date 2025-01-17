@@ -1,10 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function createHelloWorld() {
     return function (...args) {
         return ("Hello World");
     };
 }
 ;
-export {};
 /**
 * const f = createHelloWorld();
 * f(); // "Hello World"

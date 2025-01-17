@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function maxVowels(s, k) {
     function countVowels(string) {
         let count = 0;
@@ -28,4 +30,3 @@ function maxVowels(s, k) {
 }
 // console.log(maxVowels("abciiidef", 3));
 console.log(maxVowels("weallloveyou", 7));
-export {};

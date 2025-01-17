@@ -1,3 +1,4 @@
+"use strict";
 /*
 Write a function expect that helps developers test their code. It should take in any value val and return an object with the following two functions.
 
@@ -22,6 +23,7 @@ Input: func = () => expect(5).notToBe(null)
 Output: {"value": true}
 Explanation: 5 !== null so this expression returns true.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 function expect(val) {
     const toBe = (val) => {
         if (val === expect.val) {
@@ -53,7 +55,6 @@ function expect(val) {
     return ({ toBe, notToBe });
 }
 ;
-export {};
 /**
 * expect(5).toBe(5); // true
 * expect(5).notToBe(5); // throws "Equal"

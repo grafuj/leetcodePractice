@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function kidsWithCandies(candies, extraCandies) {
     let greatestArray = [];
     let max = 0;
@@ -18,4 +20,3 @@ function kidsWithCandies(candies, extraCandies) {
     return greatestArray;
 }
 console.log(kidsWithCandies([2, 3, 5, 1, 3], 3));
-export {};

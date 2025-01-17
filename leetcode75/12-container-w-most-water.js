@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function maxArea(height) {
     let maxVol = 0;
     let heightsLength = height.length;
@@ -40,4 +42,3 @@ function maxArea(height) {
 }
 let ex1 = [1, 8, 6, 2, 5, 4, 8, 3, 7];
 console.log(maxArea(ex1));
-export {};

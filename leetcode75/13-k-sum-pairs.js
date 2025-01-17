@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function maxOperations(nums, k) {
     let sortedNums = nums.sort((a, b) => {
         return a - b;
@@ -47,4 +49,3 @@ const int2 = 2;
 // console.log(maxOperations(ex1, int6));
 // console.log(maxOperations(ex2, int6));
 console.log(maxOperations(ex3, int2));
-export {};

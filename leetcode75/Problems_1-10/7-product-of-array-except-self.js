@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function productExceptSelf(nums) {
     let myArr = [];
     let maxProd = 1;
@@ -12,4 +14,3 @@ function productExceptSelf(nums) {
 }
 let exArray = [1, 2, 3, 4];
 console.log("prod(ex1): ", productExceptSelf(exArray));
-export {};

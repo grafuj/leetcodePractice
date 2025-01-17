@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function compress(chars) {
     let myObj = {};
     if (chars.length === 1) {
@@ -25,4 +27,3 @@ function compress(chars) {
 }
 let exArString1 = ["a", "a", "b", "b", "c", "c", "c"];
 console.log(compress(exArString1));
-export {};

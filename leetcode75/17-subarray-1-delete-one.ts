@@ -16,3 +16,6 @@ function longestSubarray(nums: number[]): number {
   }
   return maxUndeleted;
 };
+
+const ex1: Array<number> = [0,1,1,1,0,1,1,0,1]
+console.log(longestSubarray(ex1))

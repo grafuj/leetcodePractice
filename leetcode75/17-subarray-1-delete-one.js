@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function longestSubarray(nums) {
     let numsLength = nums.length;
     let maxUndeleted = 0;
@@ -17,4 +19,5 @@ function longestSubarray(nums) {
     return maxUndeleted;
 }
 ;
-export {};
+const ex1 = [0, 1, 1, 1, 0, 1, 1, 0, 1];
+console.log(longestSubarray(ex1));

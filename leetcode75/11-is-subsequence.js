@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function isSubsequence(s, t) {
     if (s.length > t.length) {
         // can't check for empty strings as testcases ask for "" and "" to return true >:c
@@ -16,4 +18,3 @@ function isSubsequence(s, t) {
 const ex1 = "abc";
 const ex2 = "abafk;sasc";
 console.log(isSubsequence(ex1, ex2));
-export {};

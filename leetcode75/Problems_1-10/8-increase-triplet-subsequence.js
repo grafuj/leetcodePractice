@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function increasingTriplet(nums) {
     let smaller = false;
     let greater = false;
@@ -67,4 +69,3 @@ let ex3 = [2, 1, 5, 0, 4, 6];
 console.log(increasingTriplet(ex1));
 console.log(increasingTriplet(ex2));
 console.log(increasingTriplet(ex3));
-export {};
