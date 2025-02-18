@@ -1,6 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 function closeStrings(word1, word2) {
+    if (word1.length !== word2.length) {
+        return false;
+    }
     let diff1 = "";
     let diff2 = "";
     for (let i = 0; i < word1.length; i++) {
@@ -10,6 +13,9 @@ function closeStrings(word1, word2) {
         }
     }
     console.log("diffs:", diff1, diff2);
+    // create object of letter counts that occur in both diffs
+    // sort the values of these counts and they should be the same. eg 1, 3, 5 works with 5, 1, 3
+    // return true if equal, false if not equal. array or string comparison?
     return true;
 }
 console.log(closeStrings("abbcb", "baaca"));
