@@ -52,9 +52,10 @@ function closeStrings(word1: string, word2: string): boolean {
   // console.log(letterObj2)
 
   let arr2: Array<number> = [];
+  let letterArr2: Array<string> = [];
 
   for (let key in letterObj2) {
-    // console.log("key:", key, letterObj2[key])
+    console.log("key:", key, letterObj2[key], "letterObj2.key", letterObj2.key)
     arr2.push(letterObj2[key])
   }
   arr2.sort();

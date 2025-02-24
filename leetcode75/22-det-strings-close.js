@@ -45,8 +45,9 @@ function closeStrings(word1, word2) {
     }
     // console.log(letterObj2)
     let arr2 = [];
+    let letterArr2 = [];
     for (let key in letterObj2) {
-        // console.log("key:", key, letterObj2[key])
+        console.log("key:", key, letterObj2[key], "letterObj2.key", letterObj2.key);
         arr2.push(letterObj2[key]);
     }
     arr2.sort();
