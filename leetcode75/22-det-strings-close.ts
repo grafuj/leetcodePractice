@@ -96,11 +96,11 @@ function closeStrings(word1: string, word2: string): boolean {
   let arr2: Array<number> = [];
   let letterArr2: Array<string> = [];
 
-  for (const [key, value] of Object.entries(letterObj2)) {
-    console.log("key:", key);
-    letterArr2.push(key)
-    arr2.push(value)
-  }
+  // for (const [key, value] of Object.entries(letterObj2)) {
+  //   console.log("key:", key);
+  //   letterArr2.push(key)
+  //   arr2.push(value)
+  // }
   arr2.sort();
   letterArr2.sort();
   // console.log(arr2);

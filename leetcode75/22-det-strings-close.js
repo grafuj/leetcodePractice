@@ -84,11 +84,11 @@ function closeStrings(word1, word2) {
     // console.log(letterObj2)
     let arr2 = [];
     let letterArr2 = [];
-    for (const [key, value] of Object.entries(letterObj2)) {
-        console.log("key:", key);
-        letterArr2.push(key);
-        arr2.push(value);
-    }
+    // for (const [key, value] of Object.entries(letterObj2)) {
+    //   console.log("key:", key);
+    //   letterArr2.push(key)
+    //   arr2.push(value)
+    // }
     arr2.sort();
     letterArr2.sort();
     // console.log(arr2);
