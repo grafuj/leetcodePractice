@@ -21,8 +21,36 @@ function closeStrings(word1, word2) {
             letterObj2[word2[i]]++;
         }
     }
-    console.log("letterObj1:", letterObj1);
-    console.log("letterObj2:", letterObj2);
+    // console.log("letterObj1:", letterObj1);
+    // console.log("letterObj2:", letterObj2);
+    let ValArr1 = [];
+    let ValArr2 = [];
+    let LetArr1 = [];
+    let LetArr2 = [];
+    for (let key in letterObj1) {
+        // console.log("key:", key, letterObj1[key]);
+        ValArr1.push(letterObj1[key]);
+        LetArr1.push(key);
+    }
+    ValArr1.sort();
+    LetArr1.sort();
+    // console.log("ValArr1:", ValArr1, "LetArr1:", LetArr1);
+    for (let key in letterObj2) {
+        // console.log("key:", key, letterObj2[key]);
+        ValArr2.push(letterObj2[key]);
+        LetArr2.push(key);
+    }
+    ValArr2.sort();
+    LetArr2.sort();
+    // console.log("ValArr2:", ValArr2, "LetArr2:", LetArr2);
+    // return true if equal, false if not equal. array or string comparison?
+    for (let i = 0; i < ValArr1.length; i++) {
+        if (ValArr1[i] !== ValArr2[i] || LetArr1[i] !== LetArr2[i]) {
+            return false;
+        }
+    }
+    return true;
+    // older code than 20250318
     // create object of letter counts that occur in both diffs
     // let letterObj: any = {};
     for (let char of word1) {
@@ -37,7 +65,7 @@ function closeStrings(word1, word2) {
     // console.log(letterObj)
     let arr1 = [];
     for (let key in letterObj1) {
-        // console.log("key:", key, letterObj[key])
+        console.log("key:", key, letterObj1[key]);
         arr1.push(letterObj1[key]);
     }
     arr1.sort();
