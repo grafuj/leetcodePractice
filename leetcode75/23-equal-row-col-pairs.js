@@ -22,6 +22,7 @@ function equalPairs(grid) {
         for (let j = 0; j < rowLength; j++) {
             // whole row comparison
             // do i have to make the column array? we need to send [3,2,1], [3,1,2] to checkRows
+            // what is [3,1,2]? it is [0][0] [1][0] [2][0]
             // console.log("grid[i]:", grid[i], [grid[j][i]]);
             // if (checkRows(grid[i], [])){
             // }
