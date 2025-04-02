@@ -26,9 +26,18 @@ function equalPairs(grid: number[][]): number {
       // do i have to make the column array? we need to send [3,2,1], [3,1,2] to checkRows
 
       // what is [3,1,2]? it is [0][0] [1][0] [2][0]
+
+      // this will be checkRows(grid[i], [grid[0][0], grid[1][0], grid[2][0]]
+      // if we translate this into i and j, it becomes:
+      console.log(grid[i], [grid[j][i]]); // this is an array vs single element
+      console.log(checkRows(grid[i], [grid[j][i]]));
+
+
+
+
       // console.log("grid[i]:", grid[i], [grid[j][i]]);
       // if (checkRows(grid[i], [])){
-        
+
       // }
       // single element comparison
       // console.log("grid[i]:", grid[i][j], grid[j][i]);
