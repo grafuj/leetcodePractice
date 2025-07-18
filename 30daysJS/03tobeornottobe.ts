@@ -30,14 +30,14 @@ type ToBeOrNotToBe = {
 
 function expect(val: any): ToBeOrNotToBe {
   const toBe = (val: any): boolean => {
-    if(val === expect.val){
+    if(val === expect(val)){
       return true
     } else {
       throw new Error("Not Equal")
     }
   }
   const notToBe = (val: any): boolean => {
-    if(val !== expect.val){
+    if(val !== expect(val)){
       return true
     } else {
       throw new Error("Equal")

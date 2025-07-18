@@ -25,23 +25,21 @@ Explanation: 5 !== null so this expression returns true.
 */
 Object.defineProperty(exports, "__esModule", { value: true });
 function expect(val) {
-    const toBe = (val) => {
-        if (val === expect.val) {
-            return true;
-        }
-        else {
-            throw new Error("Not Equal");
-        }
-    };
-    const notToBe = (val) => {
-        if (val !== expect.val) {
-            return true;
-        }
-        else {
-            throw new Error("Equal");
-        }
-    };
-    /*
+  const toBe = (val) => {
+    if (val === expect(val)) {
+      return true;
+    } else {
+      throw new Error("Not Equal");
+    }
+  };
+  const notToBe = (val) => {
+    if (val !== expect(val)) {
+      return true;
+    } else {
+      throw new Error("Equal");
+    }
+  };
+  /*
     const toBe = (val: any): boolean => {
       if (val === expect.val) return true;
       throw new Error("Not Equal");
@@ -52,10 +50,8 @@ function expect(val) {
       throw new Error("Equal");
     };
   */
-    return ({ toBe, notToBe });
+  return { toBe, notToBe };
 }
-;
-/**
-* expect(5).toBe(5); // true
-* expect(5).notToBe(5); // throws "Equal"
-*/ 
+
+ expect(5).toBe(5); // true
+ expect(5).notToBe(5); // throws "Equal"
